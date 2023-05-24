@@ -7,6 +7,8 @@ import { ProductPageComponent } from './page/product-page/product-page.component
 import { HomePageComponent } from './page/home-page/home-page.component';
 import { AboutComponent } from './page/about/about.component';
 import { ProductDetailComponent } from './page/product-detail/product-detail.component';
+import { AddProductComponent } from './page/add-product/add-product.component';
+import { UpdateProductComponent } from './page/update-product/update-product.component';
 
 const routes: Routes = [
   {
@@ -20,7 +22,9 @@ const routes: Routes = [
     path: 'admin', component: AdminLayoutComponent, children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'dashboard', component: DashboardPageComponent },
-      { path: 'product', component: ProductPageComponent }
+      { path: 'product', component: ProductPageComponent },
+      { path: 'product/add', component: AddProductComponent },
+      { path: 'product/update/:id', component: UpdateProductComponent },
     ]
   }
 ];
