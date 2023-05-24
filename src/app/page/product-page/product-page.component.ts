@@ -16,11 +16,15 @@ export class ProductPageComponent {
     })
   }
 
+
   removeProdcut(id: number) {
-    this.productService.deleteProduct(id).subscribe(() => {
-      this.productService.getProducts().subscribe(data => {
-        this.products = data
+    const result = window.confirm("Xóa sản phẩm")
+    if (result) {
+      this.productService.deleteProduct(id).subscribe(() => {
+        this.productService.getProducts().subscribe(data => {
+          this.products = data
+        })
       })
-    })
+    }
   }
 }
