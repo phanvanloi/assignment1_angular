@@ -3,7 +3,8 @@
     {
       "id": 1,
       "name": "Product 1",
-      "price": "100"
+      "price": "100",
+      "image": "https://picsum.photos/200"
     },
     {
       "id": 2,
