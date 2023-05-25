@@ -3,7 +3,6 @@ import { Validator, FormBuilder } from '@angular/forms';
 import { IProduct } from 'src/app/interfaces/products';
 import { ProductService } from 'src/app/service/product.service';
 import { Router } from '@angular/router';
-import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-add-product',
